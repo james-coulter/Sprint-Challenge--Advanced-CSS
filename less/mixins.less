@@ -1,1 +1,57 @@
 // Mixins Here
+
+.navAlign() {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background: @wild-sand;
+
+        h1 {
+            font-size: 3rem;
+            margin: 1%;
+            color: @header-font-color;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
+            margin-bottom: 1%;
+
+        }
+
+        a {
+            text-decoration: none;
+            justify-content: space-around;
+            font-size: 1.3rem;
+            color: @river-bend;
+
+        }
+}
+
+.headerImg() {
+    border-radius: 5px;
+}
+
+.btnCreator(@btnColor, @btnBck) {
+    text-align: center;
+    background: @btnBck;
+    padding: 2%;
+    font-size: 1.5rem;
+    width: 25%;
+    border-radius: 4px;
+
+    a {
+        color: @btnColor;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background: @btnColor;
+
+        a {
+            color: @btnBck;
+        }
+    }
+}
