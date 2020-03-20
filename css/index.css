@@ -172,6 +172,10 @@ nav {
   flex-direction: column;
   align-items: center;
   background: #F6F6F6;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  opacity: 90%;
 }
 nav h1 {
   font-size: 3rem;
@@ -190,6 +194,9 @@ nav a {
   font-size: 1.3rem;
   color: #454A59;
 }
+nav a:hover {
+  color: #dee2e6;
+}
 @media (max-width: 500px) {
   nav .links {
     width: 90%;
@@ -205,6 +212,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 8%;
 }
 .home .intro img {
   border-radius: 5px;
